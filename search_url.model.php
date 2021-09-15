@@ -23,3 +23,14 @@ class search_url{
         }
         return $search_key_str;
     }
+    public function addOrChageSearch_key($search_key,$key,$value){
+        switch($key){
+            case 'v':
+            {   
+                $search_key[$key]['key'] = $key;
+                $search_key[$key]['field'] = 'view';
+                $search_key[$key]['value'] = $value;
+                $search_key[$key]['order'] = 0;
+                if(!in_array($value,array('0','1','2','3'))){
+                    TF_debug('没有这个v');  
+                }
