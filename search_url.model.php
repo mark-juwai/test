@@ -32,5 +32,3 @@ class search_url{
                 $search_key[$key]['value'] = $value;
                 $search_key[$key]['order'] = 0;
                 if(!in_array($value,array('0','1','2','3'))){
-                    TF_debug('没有这个v');  
-                }
