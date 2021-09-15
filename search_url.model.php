@@ -168,20 +168,4 @@ class search_url{
                 }
                 break;
             }
-            case 'age':
-            {   
-                $search_key[$key]['key'] = $key;
-                $search_key[$key]['field'] = 'search_age';
-                $search_key[$key]['value'] = $value;
-                $search_key[$key]['order'] = 13;
-                if(!in_array($value,array('0','1','2','3','4','5','6','7','8','9','10','m10'))){
-                    TF_debug('没有这个age');
-                }
-                break;
-            }
-            case 'gc':
-            {
-                $search_key[$key]['key'] = $key;
-                $search_key[$key]['field'] = 'search_general_condition';
-                $search_key[$key]['value'] = $value;
-                $search_key[$key]['order'] = 14;
+}
