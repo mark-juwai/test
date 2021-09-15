@@ -102,19 +102,3 @@ class search_url{
                 }
                 break;
             }
-            case 'u':
-            {
-                $search_key[$key]['key'] = $key;
-                $search_key[$key]['field'] = 'user_id';
-                $search_key[$key]['value'] = $value;
-                $search_key[$key]['order'] = 7;
-                if(preg_match('/^[0-9]{1,11}$/',$value)===0){
-                    TF_debug('u ÊäÈë´íÎó');
-                }
-                break;
-            }
-            case 'r':
-            {
-                $search_key[$key]['key'] = $key;
-                $search_key[$key]['field'] = 'region';
-                $search_key[$key]['value'] = $value;
